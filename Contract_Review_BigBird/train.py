@@ -522,7 +522,7 @@ def load_and_cache_examples(args, tokenizer, evaluate=False, output_examples=Fal
 
 def main():
     parser = argparse.ArgumentParser()
-
+    
     # Required parameters
     parser.add_argument(
         "--model_type",
@@ -749,7 +749,7 @@ def main():
         torch.distributed.init_process_group(backend="nccl")
         args.n_gpu = 1
     args.device = device
-
+    args.n_gpu=1
     # Setup logging
     logging.basicConfig(
         format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
