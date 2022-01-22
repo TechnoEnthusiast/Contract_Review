@@ -1,7 +1,7 @@
 CUDA_VISIBLE_DEVICES=1 python train.py \
         --output_dir ./train_models/bigbird-roberta-base \
         --model_type bigbird-roberta \
-        --model_name_or_path bigbird-roberta-base \
+        --model_name_or_path google/bigbird-roberta-base \
         --train_file ../input/contract-review-dataset/train_separate_questions.json \
         --predict_file ../input/contract-review-dataset/test.json \
         --do_train \
