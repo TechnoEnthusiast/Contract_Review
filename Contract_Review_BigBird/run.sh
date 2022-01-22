@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=0 python train.py \
+python train.py \
         --output_dir ./train_models/bigbird-roberta-base \
         --model_type bigbird-roberta \
         --model_name_or_path google/bigbird-roberta-base \
